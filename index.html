@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>api-exam</title>
+</head>
+<style>
+    #box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 30px;
+        text-align: center;
+      
+    }
+    #box img{
+        height: 200px;
+     
+       padding-left: 50px;
+    }
+    #box div{
+   border: 1px solid black;
+   padding: 10px;
+   margin: 40px;
+   box-shadow: 10px 5px 20px black;
+   border-radius: 30px;
+   transition: all 0.5s;
+    }
+    
+    #box h1{
+        font-weight: 900;
+        transition: all 0.5s;
+    }
+    #box div:hover h1{
+        color:#31304D;
+        font-size: 50px;
+    }
+     button{
+        background-color:#FFCDEA;
+        display: inline;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: 900;
+   margin: 10px;
+      
+    }
+    form{
+        margin: 10px;
+
+    }
+    form input{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    form .btn{
+        background-color: #FFCDEA;
+    }
+   
+</style>
+<body>
+    <h2 style="text-align: center; font-size: 50px; text-transform: uppercase; margin: 50px; margin-top: 20px; color: #891652;">All PRODUCTS</h2>
+            
+<button id="htl">High to Low</button>
+<button id="lth">Low to High</button>
+            
+<button id="men's clothing">men's clothing</button>
+<button id="jewelery">jewelery</button>         
+<button id="electronics">electronics</button>
+<button id="women's clothing">women's clothing</button>
+
+
+<form id="search" style="display: inline;"> 
+    <input type="text" id="value" placeholder="search category">
+    <input type="submit"  class="btn" style="font-weight: 900;" >
+</form>
+
+    <div id="box"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
